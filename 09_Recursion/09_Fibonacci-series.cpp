@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
 
+// T.C -> O(2^n)
+// S.C -> O(n)
+
 int fibonacci(int n)
 {
     if(n<=1)

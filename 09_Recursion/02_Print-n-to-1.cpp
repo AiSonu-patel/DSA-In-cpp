@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
 
+// T.C -> O(n)
+// S.C -> O(n)
+
 void print(int n)
 {
     if(n==1)
