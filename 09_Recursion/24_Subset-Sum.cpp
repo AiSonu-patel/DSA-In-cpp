@@ -2,36 +2,28 @@
 #include <vector>
 using namespace std;
 
-void subset(int arr[], int index, int n, vector<vector<int>>&ans, vector<int>&temp)
+// T.C -> O(2^n)
+// S.C -> O(n)
+
+void subset(int arr[], int index, int n, int sum)
 {
     if(index==n)
     {
-        ans.push_back(temp);
+        cout<<sum<<endl;
         return;
     }
 
-    int sum=0;
     // No selected
-    subset(arr, index+1, n, ans, temp);
+    subset(arr, index+1, n, sum);
     // selected
-    temp.push_back(arr[index]);
-    subset(arr, index+1, n, ans, temp);
-    temp.pop_back();
+    subset(arr, index+1, n, sum+arr[index]);
+
 }
 
 int main()
 {
     int arr[3] = {1,2,3};
-    vector<vector<int>> ans;
-    vector<int> temp;
+    int sum=0;
 
-    subset(arr, 0, 3, ans, temp);
-    for(int i=0; i<ans.size(); i++)
-    {
-        for(int j=0; j<ans[i].size(); j++)
-        {
-            cout<<ans[i][j]<<" ";
-        }
-        cout<<endl;
-    }
+    subset(arr, 0, 3, sum); // 0, 3, 2, 5, 1, 4, 3, 6
 }
