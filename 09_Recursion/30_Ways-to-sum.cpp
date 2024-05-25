@@ -23,6 +23,6 @@ int main()
     int arr[] = {1,5,6};
     cout<<waySum(arr, 3, 7); // 6
 
-    // Tower of hanoi
+
     
 }
