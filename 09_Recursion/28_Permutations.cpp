@@ -37,6 +37,7 @@ void permut2(vector<int>&arr, vector<vector<int> > &ans, int index)
 
     for(int i=index; i<arr.size(); i++)
     {
+        
         swap(arr[i], arr[index]);
         permut2(arr, ans, index+1);
         swap(arr[i], arr[index]);
@@ -58,7 +59,7 @@ int main()
     //     cout<<endl; // {1,2,3}, {1,3,2}, {2,1,3}, {2,3,1}, {3,1,2}, {3,2,1}
     // }
 
-    vector<int> arr1 = {1,2,3};
+    vector<int> arr1 = {1,1,3};
     vector<vector<int>> ans1;
     int index=0;
     permut2(arr1, ans1, index);
