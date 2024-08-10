@@ -15,7 +15,7 @@ class Node
     }
 };
 
-Node* CreateLiskedList(int arr[], int index, int size)
+Node* CreateLinkList(int arr[], int index, int size)
 {
     // base case
     if(index==size)
@@ -23,7 +23,7 @@ Node* CreateLiskedList(int arr[], int index, int size)
         return NULL;
     }
     Node *temp = new Node(arr[index]);
-    temp->next = CreateLiskedList(arr, index+1, size);
+    temp->next = CreateLinkList(arr, index+1, size);
     return temp;
 };
 
@@ -64,7 +64,7 @@ int main()
 {
     Node *head = NULL;
     int arr[] = {1,2,3,4,5,6,7,8};
-    head = CreateLiskedList(arr, 0, 8);
+    head = CreateLinkList(arr, 0, 8);
     // rotate Node k time
     head = rotateK(head, 2);
 
