@@ -1,0 +1,23 @@
+Heap:-
+    it is a complete Binary Tree.
+    all level are completely filled except the last level.
+    At last level, node should be filled from left side.
+Type:-
+    (1) Max Heap
+    (2) Min Heap
+
+(1) Max Heap:-
+    complete Binary tree.
+    Parent node should be greater then or equal to child node.
+    for all node, it should be valid.
+Ex:-
+                    30
+                 9     20
+               8  3  16  12
+             5  4
+(2) Min Heap:-
+    complete Binary Tree.
+    Parent node should be less then or equal to its child node.
+    for all node, it should be valid.
+Ex:-
+    
