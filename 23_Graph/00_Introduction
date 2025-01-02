@@ -1,0 +1,43 @@
+#                                    Introduction to Graph
+*****************************************************************************************************
+
+1. Graph is a non linear data structure.
+2. Consisting of vertices (Node) and edges.
+
+# Types:-
+
+1. # Undirected Graph (--):-
+   A graph in which edges do not have any direction. That is the nodes are unordered pairs in the definition of every edge.
+2. # Directed Graph (-->):-
+   A graph in which edge has direction. That is the nodes are ordered pairs in the definition of every edge.
+3. # Cyclic Graph:-
+   A graph containing at least one cycle is known as a Cyclic graph.
+4. # Acyclic Graph:-
+   A graph is called an acyclic graph if zero cycles are present, and an acyclic graph is the complete opposite of a cyclic graph.
+5. # Directed Cyclic Graph:-
+6. # Directed Acyclic Graph:-
+   A Directed Graph that does not contain any cycle.
+7. # Connect Graph:-
+   The graph in which from one node we can visit any other node in the graph is known as a connected graph.
+8. # disconnect Graph:-
+   The graph in which at least one node is not reachable from a node is known as a disconnected graph.
+9. # Complete Graph:-
+   The graph in which from each node there is an edge to each other node.
+10. # Weighted Graph:-
+    A graph in which the edges are already specified with suitable weight is known as a weighted graph
+11. # Unweighted Graph:-
+    An unweighted graph is a graph in which the edges do not have weights or costs associated with them.
+12. # Null Graph:-
+    A graph is known as a null graph if there are no edges in the graph.
+13. # Trivial Graph:-
+    Graph having only a single vertex, it is also the smallest graph possible.
+
+
+                        Comparing Adjacency matrix & Adjacency list
+*****************************************************************************************************
+#               Adjacency Matrix | # Adjacency List
+1. Add Edge:      O(1)           |        O(1)      
+2. Remove Edge:   O(1)           |        O(v)
+3. Edge Exist:    O(1)           |        O(v)
+4. Space Comp:    O(v^2)         |        O(V+E), Complete Graph (V^2)
+5. Use This:      Dense Graph    |        Sparse Graph
